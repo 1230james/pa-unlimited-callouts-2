@@ -1,0 +1,40 @@
+
+BEGIN Callout  
+    Name                 FireEngine  
+    Cost                 -100  
+    MaxNumber            2147483647
+    Vehicle              FireEngine
+    Entity               Fireman
+    NumEntities          4
+    Sprite               EmergencyFireEngine
+END
+
+BEGIN Callout  
+    Name                 RiotPolice  
+    Cost                 -100  
+    MaxNumber            2147483647
+    Vehicle              RiotVan
+    Entity               RiotGuard
+    NumEntities          6
+    Sprite               EmergencyRiotPolice
+END
+
+BEGIN Callout  
+    Name                 Paramedics  
+    Cost                 -100  
+    MaxNumber            2147483647
+    Vehicle              Ambulance
+    Entity               Paramedic
+    NumEntities          4
+    Sprite               EmergencyParamedics
+END
+
+BEGIN Callout  
+    Name                 SoldiersS  
+    MaxNumber            2147483647
+   Cost                      -1000
+    Vehicle              TroopTruck
+    Entity               Soldier
+    NumEntities          6
+    Sprite               EmergencyRiotPolice
+END

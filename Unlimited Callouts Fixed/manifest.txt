@@ -1,0 +1,9 @@
+
+Name                 "Unlimited Callouts"  
+Author               Sambot  
+Description          "Allows you to call in (essentially) unlimited callouts. Also allows you to call soldiers at will (for a price). \r\n\r\n\r\nCheck out my other mods! \r\nhttp://steamcommunity.com/sharedfiles/filedetails/?id=563165423"  
+IsTranslation        false  
+FileID               F563159491  
+UpdateTime           1469556351  
+SteamAuthor          A76561198060102869  
+SteamTags            mod,content  
