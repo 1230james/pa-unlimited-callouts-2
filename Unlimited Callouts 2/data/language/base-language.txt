@@ -1,0 +1,2 @@
+interfacecallout_Military      Soldiers
+interfacecallout_AirMilitary   Air Soldiers

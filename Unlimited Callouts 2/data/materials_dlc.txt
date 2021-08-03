@@ -1,0 +1,39 @@
+BEGIN Callout  
+    Name                 FireHeli  
+    Cost                 -2000
+    MaxNumber            268435456
+    Vehicle              FireHeli
+    Entity               Fireman
+    NumEntities          4
+    Sprite               EmergencyFireEngine
+END
+
+BEGIN Callout  
+    Name                 EliteOps  
+    Cost                 -3000  
+    MaxNumber            268435456 
+    Vehicle              EliteOpsHeli
+    Entity               EliteOps
+    NumEntities          4
+    Sprite               EmergencyRiotPolice
+END
+
+BEGIN Callout  
+    Name                 AirParamedics  
+    Cost                 -1000  
+    MaxNumber            268435456 
+    Vehicle              ParamedicsHeli
+    Entity               Paramedic
+    NumEntities          4
+    Sprite               EmergencyParamedics
+END
+
+BEGIN Callout  
+    Name                 AirMilitary
+    Cost                 -14000
+    MaxNumber            134217728 
+    Vehicle              EliteOpsHeli
+    Entity               Soldier
+    NumEntities          14
+    Sprite               EmergencyRiotPolice
+END
