@@ -1,9 +1,6 @@
 
-Name                 "Unlimited Callouts"  
-Author               Sambot  
-Description          "Allows you to call in (essentially) unlimited callouts. Also allows you to call soldiers at will (for a price). \r\n\r\n\r\nCheck out my other mods! \r\nhttp://steamcommunity.com/sharedfiles/filedetails/?id=563165423"  
-IsTranslation        false  
-FileID               F563159491  
-UpdateTime           1469556351  
-SteamAuthor          A76561198060102869  
-SteamTags            mod,content  
+Name                 "Unlimited Callouts 2"  
+Author               1230james
+Description          "Adds the National Guard (soldiers) to the callouts menu, and allows (practically) unlimited callouts.\n\nAdds Soldiers and Air Soldiers to the callouts menu. Soldiers arrive in troop trucks in squads of 6 and cost $1000 per truck. Air Soldiers arrive in elite ops helicopters in squads of 14 and cost $14000 per helicopter.\n\nFor Air Soldiers, the elite ops helicopter they arrive in will only drop them off, and it will immediately depart once the entire squad has disembarked, freeing up the helipads for other helicopters. When dismissing Air Soldiers, a visitor's helicopter will arrive to pick them up, so don't worry about them getting stuck at your prison.\n\nDon't have the DLC for helicopters and want to remove the helicopter callouts? Try out my No Air Callouts mod in combination with this mod! If you do, remember to place the No Air Callouts mod higher on the priority list."  
+Version              1.0.0  
+IsTranslation        false
