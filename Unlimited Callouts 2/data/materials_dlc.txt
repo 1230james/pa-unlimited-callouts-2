@@ -27,13 +27,3 @@ BEGIN Callout
     NumEntities          4
     Sprite               EmergencyParamedics
 END
-
-BEGIN Callout  
-    Name                 AirMilitary
-    Cost                 -14000
-    MaxNumber            134217728 
-    Vehicle              EliteOpsHeli
-    Entity               Soldier
-    NumEntities          14
-    Sprite               EmergencyRiotPolice
-END
