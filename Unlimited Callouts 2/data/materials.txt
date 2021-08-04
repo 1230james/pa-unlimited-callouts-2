@@ -1,4 +1,16 @@
 
+BEGIN Object     
+    Name                 TroopTruck
+    Width                2
+    Height               5  
+    MaxStackSize         -1  
+    NumSlots             6
+    Sprite               TroopTruck
+    Properties           Vehicle
+    TopSpeed             6.0
+END
+
+
 BEGIN Callout  
     Name                 FireEngine  
     Cost                 -100  
@@ -30,10 +42,10 @@ BEGIN Callout
 END
 
 BEGIN Callout  
-    Name                 EliteOpsGround
+    Name                 EliteOp
     MaxNumber            268435456
     Cost                 -1000
-    Vehicle              RiotVan
+    Vehicle              TroopTruck
     Entity               EliteOps
     NumEntities          6
     Sprite               EmergencyRiotPolice

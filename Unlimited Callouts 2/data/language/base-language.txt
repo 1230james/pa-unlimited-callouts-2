@@ -1,2 +1,2 @@
-interfacecallout_EliteOpsGround      Elite Ops Team
+interfacecallout_EliteOp             Elite Ops Team
 interfacecallout_EliteOps            Air Elite Ops
