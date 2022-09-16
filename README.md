@@ -8,12 +8,17 @@ Install the mod off of [Steam Workshop](https://steamcommunity.com/sharedfiles/f
 
 Altneratively, you can download this repository and move the `Unlimited Callouts 2` folder into your Prison Architect mods folder.
 
-## Changes
+## Mod Features
 
-* Adds a new callout to request elite ops via truck for $1000 each.
+* Adds two new callouts to request the National Guard (soldiers):
+    * Ground-based soldiers arrive in groups of 6 via truck for $1000 per truck.
+    * Air-based soldiers arrive in groups of 14 via helicopter for $12000 per helicopter. (Island Bound only)
 * Sets the limit of all callouts to `2^28`.
+    * Except for the air-based soldiers, which have a limit of `2^26`.
+* Soldiers will shout when issued move orders.
 * Gives elite ops the sound effects of soldiers.
 * Buffs speed of troop trucks to match the speed of other emergency vehicles.
+* Gives visitor helicopters the same flight sound effects as the other helicopters.
 
 ## Description
 
@@ -27,6 +32,4 @@ It has become slightly dysfunctional in more recent versions of the game (the ca
 
 The problem with the old mod appears to center around the `MaxNumber` property of all the `Callout`s. `MaxNumber` defines the maximum number of that callout you can have simultaneously. For example, if the `MaxNumber` for firefighter teams is 3, then I can have at most 3 firefighter teams in my prison at a time. In Sambot's original mod, the `MaxNumber` for all the callouts was `2^31 - 1`, or `2147483647`. In previous versions of Prison Architect, this worked fine, but in newer versions, the game appears to do some kind of math that will "set" a limit for `MaxNumber` based on the number of units that arrive with any given callout.
 
-One of the things this mod (Unlimited Callouts 2) does is reduce the limit from `2^31 - 1` to a number that is acceptable for Prison Architect again. From experimenting, it appears that the highest value you can put in `MaxNumber` for a callout with a `NumEntities` of `4` (that is, the callout will spawn 4 units) is `2^29 - 1`, and for callouts with a `NumEntities` of `6`, the number is in the range, in mathematical notation, `[2^28, 2^29 - 1)`. Thus, this mod sets the `MaxNumber` value for all callouts to `2^28`. You will probably never get anywhere close to these limits (I tried spawning in 1,150 troop trucks and my FPS dropped to 2), so these are as good as infinite for standard gameplay.
-
-Sambot's original Unlimited Callouts mod also added a callout for a truck of soldiers. In the spirit of preserving the original UC mod's features, this mod was also going to add a callout for soldiers. However, at the time of writing, the AI for soldiers is dysfunctional, so they have been replaced with the elite ops that are now in the game instead. I find it to be a suitable replacement, as they have very similar behavior to the called out soldiers. I may add another callout for soldiers or replace the elite ops with them in the future if they get fixed, but for the time being, elite ops will be available in their place.
+One of the things this mod (Unlimited Callouts 2) does is reduce the limit from `2^31 - 1` to a number that is acceptable for Prison Architect again. From experimenting, it appears that the highest value you can put in `MaxNumber` for a callout with a `NumEntities` of `4` (that is, the callout will spawn 4 units) is `2^29 - 1`, and for callouts with a `NumEntities` of `6`, the number is in the range, in mathematical notation, `[2^28, 2^29 - 1)`. Thus, this mod sets the `MaxNumber` value for most callouts to `2^28`. You will probably never get anywhere close to these limits (I tried spawning in 1,150 troop trucks and my FPS dropped to 2), so these are as good as infinite for standard gameplay.
