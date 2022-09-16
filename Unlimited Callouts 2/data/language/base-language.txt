@@ -1,2 +1,2 @@
-interfacecallout_EliteOp             Elite Ops Team
-interfacecallout_EliteOps            Air Elite Ops
+interfacecallout_Military             National Guard
+interfacecallout_AirMilitary          Air National Guard

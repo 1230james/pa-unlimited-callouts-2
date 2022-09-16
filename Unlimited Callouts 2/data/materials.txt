@@ -42,11 +42,11 @@ BEGIN Callout
 END
 
 BEGIN Callout  
-    Name                 EliteOp
+    Name                 Military
     MaxNumber            268435456
     Cost                 -1000
     Vehicle              TroopTruck
-    Entity               EliteOps
+    Entity               Soldier
     NumEntities          6
     Sprite               EmergencyRiotPolice
 END

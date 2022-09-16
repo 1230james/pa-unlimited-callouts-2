@@ -1,8 +1,50 @@
 
-SAMPLEGROUP eliteOpsMoveOrder
+SAMPLEGROUP troops_move_order
 	SAMPLE  gi_lorry_unload_4a
 	SAMPLE  gi_lorry_unload_4b
 	SAMPLE  gi_lorry_unload_4c
+END
+
+OBJECT Soldier
+	EVENT Begin               
+		SOUNDNAME          gi_footsteps_group_near
+		SOURCETYPE         0
+		POSITIONTYPE       2
+		INSTANCETYPE       2
+		LOOPTYPE           1
+		MINDISTANCE        15.03
+		VOLUME             PARAMETER TypeLinked            0.00     0.00    28.48     8.00     0.77  Velocity  UpdateConstantly
+		RELEASE            PARAMETER TypeFixedValue        0.68  UpdateOncePerLoop
+	END
+	EVENT ShoutWarning        
+		SOUNDNAME          newsamplegroup445
+		SOURCETYPE         1
+		POSITIONTYPE       2
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        20.60
+		VOLUME             PARAMETER TypeFixedValue        6.44  UpdateOncePerLoop
+		FREQUENCY          PARAMETER TypeRangedRandom      0.86     0.98     0.00  UpdateOncePerLoop
+	END
+	EVENT ShoutWarning        
+		SOUNDNAME          newsamplegroup446
+		SOURCETYPE         1
+		POSITIONTYPE       1
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        39.09
+		VOLUME             PARAMETER TypeLinked            0.00     0.00    44.24     8.00     0.84  CameraAltitude  UpdateConstantly
+		FREQUENCY          PARAMETER TypeRangedRandom      0.94     1.02     0.00  UpdateConstantly
+	END
+    EVENT MoveOrderIssued     
+		SOUNDNAME          troops_move_order
+		SOURCETYPE         1
+		POSITIONTYPE       2
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        15.03
+		VOLUME             PARAMETER TypeFixedValue        8.00  UpdateOncePerLoop
+	END
 END
 
 OBJECT EliteOps
@@ -37,7 +79,7 @@ OBJECT EliteOps
 		FREQUENCY          PARAMETER TypeRangedRandom      0.94     1.02     0.00  UpdateConstantly
 	END
     EVENT MoveOrderIssued     
-		SOUNDNAME          eliteOpsMoveOrder
+		SOUNDNAME          troops_move_order
 		SOURCETYPE         1
 		POSITIONTYPE       2
 		INSTANCETYPE       0
@@ -47,3 +89,45 @@ OBJECT EliteOps
 	END
 END
 
+OBJECT VisitorHeli
+	EVENT Moving              
+		SOUNDNAME          helicopter_fly
+		SOURCETYPE         0
+		POSITIONTYPE       2
+		INSTANCETYPE       0
+		LOOPTYPE           1
+		MINDISTANCE        10.00
+		VOLUME             PARAMETER TypeFixedValue        7.00  UpdateOncePerLoop
+		ATTACK             PARAMETER TypeFixedValue        0.42  UpdateOncePerLoop
+		RELEASE            PARAMETER TypeFixedValue        1.05  UpdateOncePerLoop
+	END
+	EVENT VehicleDoorStartClose
+		SOUNDNAME          helictoper_door_close
+		SOURCETYPE         0
+		POSITIONTYPE       1
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        10.00
+		VOLUME             PARAMETER TypeFixedValue        7.00  UpdateOncePerLoop
+	END
+	EVENT VehicleDoorStartOpen
+		SOUNDNAME          helictoper_door_shutting
+		SOURCETYPE         0
+		POSITIONTYPE       1
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        10.00
+		VOLUME             PARAMETER TypeFixedValue        7.00  UpdateOncePerLoop
+	END
+	EVENT VehicleStartHovering
+		SOUNDNAME          helicopter_hovvering
+		SOURCETYPE         0
+		POSITIONTYPE       1
+		INSTANCETYPE       0
+		LOOPTYPE           1
+		MINDISTANCE        10.00
+		VOLUME             PARAMETER TypeFixedValue        7.00  UpdateOncePerLoop
+		ATTACK             PARAMETER TypeFixedValue        0.36  UpdateOncePerLoop
+		RELEASE            PARAMETER TypeFixedValue        1.00  UpdateOncePerLoop
+	END
+END
